@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 3
+names: ['artifact', 'bush', 'tree']
+
+roboflow:
+  workspace: project-mrvr7
+  project: forest-obstacle
+  version: 3
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/project-mrvr7/forest-obstacle/dataset/3
