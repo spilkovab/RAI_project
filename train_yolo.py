@@ -9,12 +9,16 @@ if __name__ == "__main__":
 
     # train model -- BARO ALWAYS CHANGE NAME FOR A NEW MODEL!!!
     model.train(
-        data='C:/Users/238750/bara/01_skul/4-letni/RAI_project/forest obstacle.v3i.yolov11/data.yaml',
+        data='C:/Users/spila/OneDrive/Plocha/bara/RAI_project/dataset/data.yaml',
         epochs=50,
         imgsz=640,
-        batch=16,
-        name='offroad_yolov11s_v1',
-        pretrained=True
+        batch=8,
+        name='offroad_yolov11s_v2',  
+        pretrained=True,
+        multi_scale=True,
+        patience=10,
+        lr0=0.01,
+        lrf=0.01
     )
 
     # validation
