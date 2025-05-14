@@ -5,15 +5,15 @@ from ultralytics import YOLO
 
 if __name__ == "__main__":
     # load pretrained yolo model
-    model = YOLO('yolo11s.pt')
+    model = YOLO('yolo11n.pt')
 
     # train model -- BARO ALWAYS CHANGE NAME FOR A NEW MODEL!!!
     model.train(
-        data='C:/Users/spila/OneDrive/Plocha/bara/RAI_project/dataset/data.yaml',
-        epochs=50,
+        data='/home/student/Desktop/spilkova/RAI_project/dataset/data.yaml',
+        epochs=150,
         imgsz=640,
         batch=8,
-        name='offroad_yolov11s_v2',  
+        name='offroad_yolov11n_v1',  
         pretrained=True,
         multi_scale=True,
         patience=10,
@@ -26,4 +26,3 @@ if __name__ == "__main__":
     print(metrics)
 
 
-    
