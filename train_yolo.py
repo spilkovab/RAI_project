@@ -1,5 +1,4 @@
 ''' SCRIPT FOR TRAINING A YOLO MODEL'''
-# TOTO NECO DELA!!!
 # import yolo
 from ultralytics import YOLO
 
@@ -7,7 +6,7 @@ if __name__ == "__main__":
     # load pretrained yolo model
     model = YOLO('yolo11n.pt')
 
-    # train model -- BARO ALWAYS CHANGE NAME FOR A NEW MODEL!!!
+    # train model -- ALWAYS CHANGE NAME FOR A NEW MODEL!!!
     model.train(
         data='/home/student/Desktop/spilkova/RAI_project/dataset/data.yaml',
         epochs=150,
